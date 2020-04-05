@@ -18,18 +18,8 @@
   position:absolute;
 }
 
-bv-side-menu {
-  padding: 20px;
-  width: 400px;
-  background: #3b4151
-}
-
-bv-resume {
-
-}
-
 body {
   background-color: #333333;
-  font-family: "Calibri Light", serif;
+  font-family: "Calibri Light", sans-serif;
   font-size: 14px;
 }

@@ -1,0 +1,15 @@
+
+:host {
+  margin-bottom: 20px;
+}
+
+path {
+  stroke: #fff;
+  /*fill: none;*/
+  fill: #fff;
+}
+
+line {
+  stroke-width: 1px;
+  stroke: #fff;
+}

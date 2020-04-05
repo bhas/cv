@@ -8,6 +8,6 @@ import {Component, Input} from '@angular/core';
 export class SectionComponent {
 
   @Input()
-  public title: string;
+  public header: string;
 
 }

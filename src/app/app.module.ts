@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import {ResumeModule} from './resume/resume.module';
+import {ResumePage1Module} from './resume-page1/resume-page1.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,7 @@ import {ResumeModule} from './resume/resume.module';
   ],
   imports: [
     BrowserModule,
-    ResumeModule
+    ResumePage1Module
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -7,3 +7,8 @@ path {
   stroke: #555;
   fill: #555;
 }
+
+line {
+  stroke-width: 1pt;
+  stroke: #555;
+}

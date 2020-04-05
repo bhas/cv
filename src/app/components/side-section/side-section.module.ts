@@ -1,18 +1,18 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
-import { SideMenuComponent } from './side-menu.component';
+import { SideSectionComponent } from './side-section.component';
 
 @NgModule({
   declarations: [
-    SideMenuComponent
+    SideSectionComponent
   ],
   imports: [
     BrowserModule
   ],
   providers: [],
   exports: [
-    SideMenuComponent
+    SideSectionComponent
   ],
 })
-export class SideMenuModule { }
+export class SideSectionModule { }

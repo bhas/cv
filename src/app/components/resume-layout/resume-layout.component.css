@@ -1,0 +1,11 @@
+
+:host {
+  background: white;
+  display: flex;
+  flex-direction: row;
+  min-width: 900px;
+  max-width: 900px;
+  /*900 * (297/210)*/
+  min-height: 1270px;
+  max-height: 1270px;
+}
