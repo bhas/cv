@@ -6,7 +6,7 @@ import {Directive, ElementRef, HostBinding} from '@angular/core';
 })
 export class SideMenuContentDirective {
   @HostBinding('class')
-  public classes = 'side-menu-container d-flex flex-column align-items-stretch';
+  public classes = 'side-menu-container d-flex flex-column align-items-stretch p-4';
   @HostBinding('style')
-  public styles = 'min-width: 300px; max-width: 300px; padding: 20px; background: #3b4151; color: white;';
+  public styles = 'min-width: 300px; max-width: 300px; background: #3b4151; color: white;';
 }
