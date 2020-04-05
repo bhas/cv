@@ -27,3 +27,9 @@ bv-side-menu {
 bv-resume {
 
 }
+
+body {
+  background-color: #333333;
+  font-family: "Calibri Light", serif;
+  font-size: 14px;
+}

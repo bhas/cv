@@ -3,6 +3,7 @@ import { NgModule } from '@angular/core';
 
 import { ResumeComponent } from './resume.component';
 import {SideMenuModule} from './side-menu/side-menu.module';
+import {SectionModule} from '../components/section/section.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +11,8 @@ import {SideMenuModule} from './side-menu/side-menu.module';
   ],
   imports: [
     BrowserModule,
-    SideMenuModule
+    SideMenuModule,
+    SectionModule
   ],
   providers: [],
   exports: [ResumeComponent]
