@@ -1,9 +1,9 @@
-import {AfterViewInit, Component, Directive, HostBinding, OnInit} from '@angular/core';
+import {AfterViewInit, Component, Directive, HostBinding, Input, OnInit} from '@angular/core';
+import {ActivatedRoute} from '@angular/router';
 
 // #region js methods
-declare function loadConnect4(): void;
-// declare function UnityProgress(unityInstance, progress): any;
-//declare var UnityLoader: any;
+declare function UnityProgress(unityInstance, progress): any;
+declare var UnityLoader: any;
 // #endregion
 
 @Component({
@@ -14,15 +14,22 @@ declare function loadConnect4(): void;
 export class TestComponent implements AfterViewInit {
   unityInstance: any;
 
-
-  public ngAfterViewInit(): void {
-    // loadConnect4();
-    // this.unityInstance = UnityLoader.instantiate("unityContainer", './src/assets/unity/connect-4/Build/Built-connect-4.json');
-    loadConnect4();
+  constructor(private _route: ActivatedRoute) {
   }
 
-
-
+  public ngAfterViewInit(): void {
+    const project = this._route.snapshot.paramMap.get('project').toLowerCase();
+    switch (project) {
+      case 'tic-tac-toe':
+      case 'connect-4':
+      case 'car-ai':
+        const projectPath = `assets/unity/${project}/Build/Build.json`;
+        this.unityInstance = UnityLoader.instantiate("unityContainer", projectPath, {onProgress: UnityProgress});
+        break;
+      default:
+        throw new Error("Uknown page")
+    }
+  }
 }
 
 
