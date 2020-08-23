@@ -1,8 +1,8 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-
 import { AppComponent } from './app.component';
-import {ResumePage1Module} from './resume-page1/resume-page1.module';
+import {ResumePage1Module} from './views/resume-page1/resume-page1.module';
+import {AppRoutingModule} from './app-routing.module';
 
 @NgModule({
   declarations: [
@@ -10,7 +10,8 @@ import {ResumePage1Module} from './resume-page1/resume-page1.module';
   ],
   imports: [
     BrowserModule,
-    ResumePage1Module
+    ResumePage1Module,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
